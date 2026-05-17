@@ -1,80 +1,57 @@
-/* Базові стилі */
 body {
-  font-family: 'Poppins', sans-serif; /* сучасний шрифт */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #000; /* чорний фон */
+  color: #fff;      /* білий текст */
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  padding: 15px 0;
+  border-bottom: 2px solid #444;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
 }
 
-.gallary {
-  padding: 2rem;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+nav a:hover {
+  color: #ff4444; /* червоний акцент */
 }
 
-/* Заголовок */
-h1 {
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.block img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.block h1, .block h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #111;
   text-align: center;
-  margin-bottom: 2rem;
-  font-family: 'Playfair Display', serif; /* елегантний акцент */
-  font-size: 2.5rem;
-  color: #2c3e50;
-  position: relative;
-}
-
-h1::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: #3498db;
-  margin: 0.5rem auto 0;
-  border-radius: 2px;
-}
-
-/* Сітка */
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-/* Картки */
-.card {
-  border: 1px solid #ddd;
-  border-radius: 0.75rem;
-  padding: 10px;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Заголовки карток */
-.card h2 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-  color: #34495e;
-}
-
-/* Опис */
-.card p {
-  font-size: 0.95rem;
-  color: #555;
+  padding: 20px;
+  font-size: 0.9rem;
 }
